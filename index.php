@@ -1,3 +1,14 @@
+<?php
+
+  session_start();
+  require("config.php");
+// Check if the user is
+if(!isset($_SESSION['carrinho'])){
+    $_SESSION['carrinho'] = array();
+  }
+
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +53,15 @@
     <div class="hero-container">
       <h1>BEM-VINDO Á PLATAFORMA DE TURISMO</h1>
       <h2>TURISMO RESPONSÁVEL E SUSTENTÁVEL SÃO TOMÉ & PRINCÍPE</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="./login.php" class="btn-get-started scrollto">
+            <i class="bi bi-person-fill"></i>
+            <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){echo "Bem-Vindo ";echo htmlspecialchars($_SESSION["username"]);
+            }
+            else{ echo "Conta";}?>
+
+
+
+        </a>
     </div>
   </section><!-- End Hero -->
 
@@ -52,26 +71,55 @@
 
 
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
+      <a href="index.php" class="logo me-auto me-lg-0"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Início</a></li>
+          <li><a class="nav-link scrollto active" href="index.php">Início</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre Nós</a></li>
           <li><a class="nav-link scrollto" href="#services">Projetos</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Galeria</a></li>
           <li><a class="nav-link scrollto" href="#team">Equipa</a></li>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
+            <div>
+
+            </div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="header-social-links d-flex align-items-center">
+
+
+
+
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+          <li>
+              <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
+
+              ?>
+              <a href="./logout.php" class="bi bi-person-fill">  <?php
+              echo "Sair";
+                             }?>
+              </a>
+              <?php  if(!(isset($_SESSION["loggedin"]))){
+
+                  ?>
+
+                  <a href="./register.php" class="bi bi-person-fill">
+
+                    <?php  if(!(isset($_SESSION["loggedin"]))){ echo "Registar";
+                            }
+                    }
+                    ?>
+                  </a>
+             </li>
+
+
       </div>
 
     </div>
