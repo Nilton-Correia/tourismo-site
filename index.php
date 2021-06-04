@@ -132,27 +132,29 @@ if(!isset($_SESSION['carrinho'])){
       <div class="container">
 
         <div class="section-title">
-          <h2>Sobre Nós</h2>
+          <h2>Quem Somos</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+                Plataforma de Turismo Sustentável e Responsável - é uma rede, composta por diversas entidades privadas nacionais, criada sem fins lucrativos, cujo o propósito é promover  o turismo sustentável em S. Tomé e Príncipe, por meio dos eixos estratégicos seguintes:
+
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Prover recursos financeiros para apoio às despesas do funcionamento do PNOST;</li>
+              <li><i class="ri-check-double-line"></i>Elaboração do Plano Nacionl de Ação Ecoturístico - que regulamente e faça a gestão de toda a atividade turística dentro do PNOST;</li>
+              <li><i class="ri-check-double-line"></i>Envolvimento na fiscalização e monitorização de obras de benfeitorias que incidam sobre o PNOST;</li>
+
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+              <ul>
+              <li><i class="ri-check-double-line"></i>Criação e gestão de um fundo especial para o PNOST em estrita colaboração com as entidades públicas de tutela do PNOST;</li>
+              <li><i class="ri-check-double-line"></i>Promoção e supervisão de atividades que permitam o PNOST angariar receitas provindas de atividades turísticas;</li>
+              <li><i class="ri-check-double-line"></i>Alocação de técnicos especializados para proteção e preservação de biodiversidade e dos ecossistemas;</li>
+              </ul>
+              <div class="read-more"><a href="quem_somos.php"><i class="bi bi-arrow-right"></i> Read More</a></div>
           </div>
         </div>
 
