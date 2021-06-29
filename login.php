@@ -136,7 +136,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="assets/img/logo1.png" alt="sing up image"></figure>
                         <p>AINDA NÃO TEM CONTA? <a href="register.php">Fazer Registo</a>.</p>
                     </div>
 

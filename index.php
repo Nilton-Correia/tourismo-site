@@ -364,7 +364,7 @@ if(!isset($_SESSION['carrinho'])){
             </div>
           </div>
 
-         
+
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-img"><img src="assets/img/portfolio/img_1.png" class="img-fluid" alt=""></div>

@@ -273,7 +273,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Registar</h2>
+                        <h2 class="form-title">Criar Conta</h2>
 
 
                         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -315,13 +315,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>Eu concordo com todas as declarações nos  <a href="termos.php" class="term-service">Termos de serviço</a></label>
                         </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Submeter"/>
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Registar"/>
                             </div>
                                                 </form>
 
                     </div>
                     <div class="signup-image">
-                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="assets/img/logo1.png" alt="sing up image"></figure>
                         <p>JÁ TEM CONTA? <a href="login.php">Iniciar Sessão</a>.</p>
                     </div>
                 </div>
