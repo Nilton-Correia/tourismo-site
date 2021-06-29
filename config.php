@@ -2,7 +2,7 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 $host="localhost";
-$port=3306;
+$port=3308;
 $socket="";
 $user="root";
 $password="";

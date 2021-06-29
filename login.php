@@ -119,7 +119,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Login</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -137,7 +137,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
-                        <p>AINDA NÃO TEm CONTA? <a href="register.php">Criar Conta</a>.</p>
+                        <p>AINDA NÃO TEM CONTA? <a href="register.php">Fazer Registo</a>.</p>
                     </div>
 
                     <div class="signin-form">
@@ -153,13 +153,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <span class="help-block"><?php echo $password_err; ?></span>
                         </div>
                         <div class="form-group form-button">
-                            <input type="submit" name="signin" id="signin" class="form-submit" value="Submeter"/>
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Iniciar Sessão"/>
                         </div>
 
                         </form>
 
                         <div class="social-login">
-                            <span class="social-label">Or login with</span>
                             <ul class="socials">
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>

@@ -53,14 +53,8 @@ if(!isset($_SESSION['carrinho'])){
     <div class="hero-container">
       <h1>BEM-VINDO Á PLATAFORMA DE TURISMO</h1>
       <h2>TURISMO RESPONSÁVEL E SUSTENTÁVEL SÃO TOMÉ & PRINCÍPE</h2>
-        <a href="./login.php" class="btn-get-started scrollto">
-            <i class="bi bi-person-fill"></i>
-            <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){echo "Bem-Vindo ";echo htmlspecialchars($_SESSION["username"]);
-            }
-            else{ echo "Conta";}?>
-
-
-
+        <a href="" class="btn-get-started scrollto">
+            <i class="bi bi-search"></i>
         </a>
     </div>
   </section><!-- End Hero -->
@@ -80,8 +74,18 @@ if(!isset($_SESSION['carrinho'])){
           <li><a class="nav-link scrollto" href="#services">Projetos</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Galeria</a></li>
           <li><a class="nav-link scrollto" href="#team">Equipa</a></li>
-          </li>
+
           <li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
+
+
+
+
+            <a href="login.php" class="btn-get-started scrollto">
+                <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){echo "Bem-Vindo ";echo htmlspecialchars($_SESSION["username"]);
+                }
+                else{ echo "Iniciar Sessão";}?>
+            </a>
+
             <div>
 
             </div>
@@ -99,23 +103,6 @@ if(!isset($_SESSION['carrinho'])){
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
           <li>
-              <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
-
-              ?>
-              <a href="./logout.php" class="bi bi-person-fill">  <?php
-              echo "Sair";
-                             }?>
-              </a>
-              <?php  if(!(isset($_SESSION["loggedin"]))){
-
-                  ?>
-
-                  <a href="./register.php" class="bi bi-person-fill">
-
-                    <?php  if(!(isset($_SESSION["loggedin"]))){ echo "Registar";
-                            }
-                    }
-                    ?>
                   </a>
              </li>
 
@@ -154,7 +141,7 @@ if(!isset($_SESSION['carrinho'])){
               <li><i class="ri-check-double-line"></i>Promoção e supervisão de atividades que permitam o PNOST angariar receitas provindas de atividades turísticas;</li>
               <li><i class="ri-check-double-line"></i>Alocação de técnicos especializados para proteção e preservação de biodiversidade e dos ecossistemas;</li>
               </ul>
-              <div class="read-more"><a href="quem_somos.php"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <div class="read-more"><a href="quem_somos.php"><i class="bi bi-arrow-right"></i> Ler mais ...</a></div>
           </div>
         </div>
 
@@ -171,55 +158,43 @@ if(!isset($_SESSION['carrinho'])){
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card" style='background-image: url("assets/img/img_7.png");'>
               <div class="card-body">
-                <h5 class="card-title"><a href="objetivo.html">Objetivos</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a>Visão</a></h5>
+                <p class="card-text">Atingir níveis cada vez mais elevados de sustentabilidade da atividade turística  em território nacional.
+                </p>
+
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card" style='background-image: url("assets/img/img_10.png");'>
               <div class="card-body">
-                <h5 class="card-title"><a href="missao.html">Missão</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a>Missão</a></h5>
+                <p class="card-text">Promoção de boas práticas em Turismo  em todo o território de S. Tomé e Príncipe.
+                </p>
+
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card" style='background-image: url("assets/img/img_12.png");'>
-              <div class="card-body">
-                <h5 class="card-title"><a href="valores.html">Valores</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="card" style='background-image: url("assets/img/img_13.png");'>
-              <div class="card-body">
-                <h5 class="card-title"><a href="corpo.html">Corpos Sociais</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("assets/img/img_11.png");'>
               <div class="card-body">
-                <h5 class="card-title"><a href="estatutos.html">Estatutos</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a>Valores</a></h5>
+                <p class="card-text">Conservação e  preservação dos recursos naturais e culturais endógenos;
+                    Desenvolvimento harmonioso e equilibrado do território nacional;
+                    Integração e socioeconómica das comunidades rurais.
+                </p>
+
               </div>
             </div>
           </div>
+
+
           <div class="col-md-6 d-flex align-items-stretch mt-4">
             <div class="card" style='background-image: url("assets/img/img_9.png");'>
               <div class="card-body">
-                <h5 class="card-title"><a href="carta.html">Carta de Sustentabilidade</a></h5>
+                <h5 class="card-title"><a>Carta de Sustentabilidade</a></h5>
                 <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+
               </div>
             </div>
 
@@ -269,45 +244,44 @@ if(!isset($_SESSION['carrinho'])){
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="percurso.html">Percursos Sustentáveis</a></h4>
+
+              <h4 class="title"><a>Percursos Sustentáveis</a></h4>
               <p class="description">Os Percursos de Turismo Sustentável foram criados para que conheçamos um turismo de
                 .....</p>
-              <div class="read-more"><a href="percurso.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <div class="read-more"><a href="percursos.php"><i class="bi bi-arrow-right"></i> Ler mais...</a></div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-card-checklist" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Plano Nacional de Ecoturismo</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              <div class="read-more"><a href="percurso.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
+
+              <h4 class="title"><a>Plano Nacional de Ecoturismo</a></h4>
+              <p class="description"> Está em curso a elaboração do Plano Nacional de Ação Ecoturístico (PNAE)...</p>
+              <div class="read-more"><a href="plano-nacional.php"><i class="bi bi-arrow-right"></i> Ler mais...</a></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Formação Clean & Safe</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              <div class="read-more"><a href="percurso.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <h4 class="title"><a>Formação Clean & Safe</a></h4>
+              <p class="description">Projecto - Medidas Urgentes de Mitigação do Impacto da COVID-19 ...</p>
+              <div class="read-more"><a href="formacao_clean.php"><i class="bi bi-arrow-right"></i> Ler mais...</a></div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Guardiões d’Obô</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <div class="read-more"><a href="percurso.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
+
+              <h4 class="title"><a>Guardiões d’Obô</a></h4>
+              <p class="description">OS 12 GUARDIÕES D’OBÔ – equipa criada para fiscalizar, monitorar, sensibilizar e zelar...</p>
+              <div class="read-more"><a href="guardioes_obo.php"><i class="bi bi-arrow-right"></i> Ler mais...</a></div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-brightness-high" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Formação de Guias Locais</a></h4>
+
+              <h4 class="title"><a >Formação de Guias Locais</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              <div class="read-more"><a href="percurso.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              <div class="read-more"><a href="percurso.html"><i class="bi bi-arrow-right"></i> Ler mais...</a></div>
             </div>
           </div>
 
@@ -317,88 +291,7 @@ if(!isset($_SESSION['carrinho'])){
     </section><!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Avaliação</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
+<!-- End Testimonials Section -->
 
     <!-- ======= Cta Section ======= -->
 
@@ -408,8 +301,8 @@ if(!isset($_SESSION['carrinho'])){
       <div class="container">
 
         <div class="section-title">
-          <h2>Galeria</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>São Tomé e Príncipe</h2>
+         </p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
@@ -421,7 +314,7 @@ if(!isset($_SESSION['carrinho'])){
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-img"><img src="assets/img/portfolio/img_6.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Praia Banana</h4>
@@ -431,7 +324,7 @@ if(!isset($_SESSION['carrinho'])){
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-img"><img src="assets/img/portfolio/img_5.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Hotel Miramar</h4>
@@ -441,7 +334,7 @@ if(!isset($_SESSION['carrinho'])){
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item ">
             <div class="portfolio-img"><img src="assets/img/portfolio/img_8.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Centro do Mundo</h4>
@@ -451,7 +344,7 @@ if(!isset($_SESSION['carrinho'])){
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item ">
             <div class="portfolio-img"><img src="assets/img/portfolio/img_10.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Pico Cão Grande</h4>
@@ -461,27 +354,19 @@ if(!isset($_SESSION['carrinho'])){
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/img_11.png" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item ">
+            <div class="portfolio-img"><img src="images/img_21.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Túnel de Santa Catarina</h4>
+              <h4></h4>
               <p>São Tomé</p>
-              <a href="assets/img/portfolio/img_11.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Túnel de Santa Catarina"><i class="bx bx-plus"></i></a>
+              <a href="images/img_21.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
 
             </div>
           </div>
+
+         
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/img_12.png" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Cascata de São Nicolau</h4>
-              <p>São Tomé</p>
-              <a href="assets/img/portfolio/img_12.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Cascata de São Nicolau"><i class="bx bx-plus"></i></a>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-img"><img src="assets/img/portfolio/img_1.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Ilheu das Rolas</h4>
@@ -491,7 +376,7 @@ if(!isset($_SESSION['carrinho'])){
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item  filter-app">
             <div class="portfolio-img"><img src="assets/img/portfolio/img.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Resort Súndy</h4>
@@ -502,11 +387,11 @@ if(!isset($_SESSION['carrinho'])){
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/img_2.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="images/img_20.png" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Mucumbi</h4>
+              <h4></h4>
               <p>São Tomé</p>
-              <a href="assets/img/portfolio/img_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Mucumbi"><i class="bx bx-plus"></i></a>
+              <a href="images/img_20.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
 
             </div>
           </div>
@@ -613,9 +498,7 @@ if(!isset($_SESSION['carrinho'])){
           <h2>Contactos</h2>
         </div>
 
-        <div class="col-lg-6 ">
-          <a href="https://www.google.com/maps/place/Mucumbli/@0.3500046,6.538614,17z/data=!4m18!1m9!3m8!1s0x1076724be106333b:0xf9a785be53f37f39!2sMucumbli!5m2!4m1!1i2!8m2!3d0.3500046!4d6.5408027!3m7!1s0x1076724be106333b:0xf9a785be53f37f39!5m2!4m1!1i2!8m2!3d0.3500046!4d6.5408027?hl=pt-PT"><img src="assets/img/portfolio/mapa.png" alt="" class="img-fluid"></a>
-        </div>
+
         <div class="row mt-5">
 
           <div class="col-lg-4">
